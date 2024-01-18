@@ -16,6 +16,8 @@ ReactDOM.render(
 
 // React projects are created from from small custome pieces/components
 // Components are reusable
+
+/*
 function MyNavbar() {
     return (
         <ul>
@@ -25,14 +27,16 @@ function MyNavbar() {
         </ul>
     )
 }
-
+ 
 ReactDOM.render(
     <div>
-        {/* React component */}
+        // React component
         <MyNavbar /> 
     </div>,
     document.getElementById('root')
 )
+*/
+
 // It's easier to make changes and maintain the code
 
 // React is declarative! (What should be done?)
@@ -125,3 +129,16 @@ const wrapper = (
     _owner: null, 
     _store: {}
 } */
+
+const navbar = (
+    <nav>
+        <h1>My awesome bistro</h1>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(navbar, document.getElementById("root"));
