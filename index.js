@@ -1,8 +1,9 @@
 // Global variable ReactDOM with method render (element to be placed, place where the element is rendered)
-ReactDOM.render(<h1>Now, I'm using React!</h1>, document.getElementById('root'));
+// ReactDOM.render(<h1>Now, I'm using React!</h1>, document.getElementById('root'));
 
 // Good practice for React 
 // Multiline 
+/*
 ReactDOM.render(
     <ul>
         <li>Fun fact no. 1</li>
@@ -10,6 +11,7 @@ ReactDOM.render(
     </ul>,
     document.getElementById('root')
 );
+*/
 
 // !------------------ WHY REACT? ----------------
 // It's composible! 
@@ -141,4 +143,14 @@ const navbar = (
     </nav>
 )
 
-ReactDOM.render(navbar, document.getElementById("root"));
+// ?React 17
+// ReactDOM.render(navbar, document.getElementById("root"));
+
+// ?React 18
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(navbar);
+
+// !------------- COMPONENTS ----------------
+// Funftions that return a React elements (UI)
+// Components use PascalCase notation for names
+// e.g. <MyComponent /> 
