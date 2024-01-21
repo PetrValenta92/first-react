@@ -88,7 +88,7 @@ console.log(<h1 className="header">This is JSX</h1>) =>
 
 */
 
-// React can only return a single parent element!
+// !React can only return a single parent element!
 // In case we need more elements to render, we have to wrap them into a one parent element
 
 // For variable we need to wrap the element with parentheses
@@ -132,23 +132,14 @@ const wrapper = (
     _store: {}
 } */
 
-const navbar = (
-    <nav>
-        <h1>My awesome bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
-)
-
 // ?React 17
-// ReactDOM.render(navbar, document.getElementById("root"));
+// ReactDOM.render(wrapper, document.getElementById("root"));
 
 // ?React 18
+/* 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(navbar);
+root.render(wrapper);
+*/
 
 // !------------- COMPONENTS ----------------
 // Funftions that return a React elements (UI)
@@ -202,3 +193,6 @@ function Page() {
 
 ReactDOM.render(<Page />, document.getElementById("root"))
 */
+
+// !-----------------STYLING ----------------
+// Styling works same as JS. But it uses a "className=""" property for elements
